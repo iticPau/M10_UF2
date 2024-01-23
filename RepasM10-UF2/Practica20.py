@@ -5,7 +5,7 @@ def main():
         if Nombre.lower() == 'fin':
             break
         if Nombre in Dicc_contactos:
-            print(f"El nombre '{Nombre}' ya existe en el diccionario. No se agregará.")
+            print(f"El nombre '{Nombre}' ya existe en el diccionario. No se agrega.")
         else:
             try:
                 Edad = int(input(f"Introduce la edad para {Nombre}: "))
