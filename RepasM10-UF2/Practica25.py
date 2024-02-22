@@ -1,4 +1,3 @@
-import json
 class Vehiculo:
     def __init__(self, marca, modelo, año_fabricacion, color, num_puertas, velocidad_max):
         self.marca = marca
@@ -53,6 +52,7 @@ class Vehiculo:
         print(f"Color: {self.color}")
         print(f"Numero de puertas: {self.num_puertas}")
         print(f"Velocidad maxima: {self.velocidad_max}")
+    
     def to_dict(self):
         return {
             "marca": self.marca,
@@ -63,5 +63,7 @@ class Vehiculo:
             "velocidad_max": self.velocidad_max
         }
 vehiculo = Vehiculo("Lamborguini", "Aventador", 2020, "Rojo", 2, 310)
-vehiculo.parts()
-print(json.dumps(vehiculo.to_dict(), indent=2))
+vehiculo2 = Vehiculo("Jaguar", "Aventador", 2020, "Rojo", 2, 310)
+
+print(vehiculo.to_dict())
+print(vehiculo2.parts())
