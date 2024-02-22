@@ -1,4 +1,3 @@
-import json
 
 class Usuario:
     def __init__(self, nombre, apellido, edad, correo, telefono, direccion):
@@ -63,5 +62,7 @@ class Usuario:
             "direccion": self.direccion
         }
 usuario = Usuario("Pau", "Insa", 19, "pauinsa@ejemplo.com", "123456789", "Poble sec")
+usuario2 = Usuario("Raul", "Gonza", 19, "raul@ejemplo.com", "987654321", "Raval")
 usuario.saludo()
-print(json.dumps(usuario.to_dict(), indent=2))
+usuario2.saludo()
+

@@ -8,6 +8,6 @@ for palabra in Tupla:
             letraCon[letra] += 1
         else:
             letraCon[letra] = 1
-print("\nLetras contadas:")
+print("Letras contadas:")
 for letra, frecuencia in letraCon.items():
-    print(f"{letra}: {frecuencia}")
+    print(f"{letra} : {frecuencia}")
